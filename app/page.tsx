@@ -195,7 +195,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-blue-50">
+    <div className="bg-gradient-to-b from-purple-50 to-blue-50">
       {/* Scroll Controls */}
       <ScrollControls />
 

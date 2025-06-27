@@ -15,6 +15,12 @@ import { Enhanced3DHero } from "@/components/Enhanced3DHero"
 import { LazyLoadWrapper } from "@/components/LazyLoadWrapper"
 import { CharitySection } from "@/components/CharitySection"
 import { CompanionShowcase3D } from "@/components/3DCompanionShowcase"
+import { TestimonialsSection } from "@/components/TestimonialsSection"
+import { CommunitySection } from "@/components/CommunitySection"
+import { ResearchSection } from "@/components/ResearchSection"
+import { FeaturesComparisonSection } from "@/components/FeaturesComparisonSection"
+import { NewsletterSection } from "@/components/NewsletterSection"
+import { ScrollControls } from "@/components/ScrollControls"
 import { getTranslation, type Language } from "@/lib/translations"
 import { ShopSection } from "@/components/ShopSection"
 import { useCart } from "@/hooks/useCart"
@@ -190,6 +196,9 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-blue-50">
+      {/* Scroll Controls */}
+      <ScrollControls />
+
       {/* Header - Always visible, no lazy loading */}
       <Header language={language} onLanguageChange={setLanguage} />
 
@@ -198,6 +207,9 @@ export default function HomePage() {
 
       {/* 3D Companion Showcase */}
       <CompanionShowcase3D language={language} />
+
+      {/* Features Comparison Section */}
+      <FeaturesComparisonSection />
 
       {/* Charity Section */}
       <CharitySection language={language} />
@@ -267,6 +279,15 @@ export default function HomePage() {
         </div>
       </LazySection>
 
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* Research Section */}
+      <ResearchSection />
+
+      {/* Community Section */}
+      <CommunitySection />
+
       {/* Care Guide Section - Lazy loaded */}
       <LazySection
         id="care"
@@ -315,6 +336,9 @@ export default function HomePage() {
           </div>
         </div>
       </LazySection>
+
+      {/* Newsletter Section */}
+      <NewsletterSection />
 
       {/* CTA Section - Lazy loaded */}
       <LazySection className="py-16 px-4 bg-white" animationClass="animate-scale-in">

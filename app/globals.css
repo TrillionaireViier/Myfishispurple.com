@@ -57,17 +57,6 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-
-  html,
-  body {
-    height: 100%;
-    min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-  }
-
-  body {
-    overflow-y: scroll; /* Always allow vertical scroll */
-  }
 }
 
 @layer base {

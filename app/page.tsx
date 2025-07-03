@@ -11,16 +11,9 @@ import { LazySection } from "@/components/LazySection"
 import { LazyCard } from "@/components/LazyCard"
 import { ProgressiveImage } from "@/components/ProgressiveImage"
 import { Header } from "@/components/Header"
-import { Enhanced3DHero } from "@/components/Enhanced3DHero"
+import { EnhancedHero } from "@/components/EnhancedHero"
 import { LazyLoadWrapper } from "@/components/LazyLoadWrapper"
 import { CharitySection } from "@/components/CharitySection"
-import { CompanionShowcase3D } from "@/components/3DCompanionShowcase"
-import { TestimonialsSection } from "@/components/TestimonialsSection"
-import { CommunitySection } from "@/components/CommunitySection"
-import { ResearchSection } from "@/components/ResearchSection"
-import { FeaturesComparisonSection } from "@/components/FeaturesComparisonSection"
-import { NewsletterSection } from "@/components/NewsletterSection"
-import { ScrollControls } from "@/components/ScrollControls"
 import { getTranslation, type Language } from "@/lib/translations"
 import { ShopSection } from "@/components/ShopSection"
 import { useCart } from "@/hooks/useCart"
@@ -195,21 +188,12 @@ export default function HomePage() {
   }
 
   return (
-    <div className="bg-gradient-to-b from-purple-50 to-blue-50">
-      {/* Scroll Controls */}
-      <ScrollControls />
-
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-blue-50">
       {/* Header - Always visible, no lazy loading */}
       <Header language={language} onLanguageChange={setLanguage} />
 
-      {/* Enhanced 3D Hero Section */}
-      <Enhanced3DHero language={language} />
-
-      {/* 3D Companion Showcase */}
-      <CompanionShowcase3D language={language} />
-
-      {/* Features Comparison Section */}
-      <FeaturesComparisonSection />
+      {/* Enhanced Hero Section - Above the fold with video/photo */}
+      <EnhancedHero language={language} />
 
       {/* Charity Section */}
       <CharitySection language={language} />
@@ -252,41 +236,6 @@ export default function HomePage() {
           </div>
         </LazySection>
       </LazyLoadWrapper>
-
-      {/* Detailed Description Section */}
-      <LazySection
-        className="py-16 px-4 bg-gradient-to-r from-purple-100 to-blue-100"
-        animationClass="animate-fade-in-up"
-      >
-        <div className="container mx-auto max-w-4xl text-center">
-          <Card className="bg-white/90 backdrop-blur-sm shadow-xl border-purple-200">
-            <CardContent className="p-12">
-              <div className="flex items-center justify-center mb-6">
-                <Heart className="h-8 w-8 text-purple-600 mr-3" />
-                <h3 className="text-3xl font-bold text-purple-900">Why Choose a Purple Pufferfish Companion?</h3>
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-                {getTranslation(language, "detailedDescription")}
-              </p>
-              <div className="mt-8 flex justify-center">
-                <Button className="bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200">
-                  <Heart className="mr-2 h-4 w-4" />
-                  Find Your Companion
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </LazySection>
-
-      {/* Testimonials Section */}
-      <TestimonialsSection />
-
-      {/* Research Section */}
-      <ResearchSection />
-
-      {/* Community Section */}
-      <CommunitySection />
 
       {/* Care Guide Section - Lazy loaded */}
       <LazySection
@@ -336,9 +285,6 @@ export default function HomePage() {
           </div>
         </div>
       </LazySection>
-
-      {/* Newsletter Section */}
-      <NewsletterSection />
 
       {/* CTA Section - Lazy loaded */}
       <LazySection className="py-16 px-4 bg-white" animationClass="animate-scale-in">

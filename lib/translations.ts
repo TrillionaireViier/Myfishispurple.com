@@ -12,6 +12,8 @@ export const translations = {
     heroTitle: "Meet Your New Best Friend",
     heroSubtitle: "Purple Pufferfish",
     heroDescription:
+      "Discover the perfect companion to brighten your day and reduce loneliness with our amazing Purple Pufferfish.",
+    detailedDescription:
       "The Purple Pufferfish isn't just a pet - it's a companion that brings joy, reduces stress, and helps combat loneliness. With their expressive eyes, playful personality, and unique ability to 'puff up' when excited, these amazing creatures create an emotional bond that brightens your day.",
     exploreSpecies: "Meet Your Pufferfish",
     watchCareGuide: "Care Guide",
@@ -92,6 +94,8 @@ export const translations = {
     heroTitle: "Зустрічайте свого нового найкращого друга",
     heroSubtitle: "Фіолетова Риба-Куля",
     heroDescription:
+      "Фіолетова риба-куля - це не просто домашня тварина, це компаньйон, який приносить радість, зменшує стрес і допомагає боротися з самотністю. З їхніми виразними очима, грайливою особистістю та унікальною здатністю 'роздуватися' від захоплення, ці дивовижні створіння створюють емоційний зв'язок, який освітлює ваш день.",
+    detailedDescription:
       "Фіолетова риба-куля - це не просто домашня тварина, це компаньйон, який приносить радість, зменшує стрес і допомагає боротися з самотністю. З їхніми виразними очима, грайливою особистістю та унікальною здатністю 'роздуватися' від захоплення, ці дивовижні створіння створюють емоційний зв'язок, який освітлює ваш день.",
     exploreSpecies: "Зустрічайте свою рибу-кулю",
     watchCareGuide: "Посібник з догляду",
@@ -174,6 +178,8 @@ export const translations = {
     heroSubtitle: "Lila Kugelfisch",
     heroDescription:
       "Der Lila Kugelfisch ist nicht nur ein Haustier - er ist ein Begleiter, der Freude bringt, Stress reduziert und hilft, Einsamkeit zu bekämpfen. Mit ihren ausdrucksstarken Augen, verspielten Persönlichkeit und einzigartigen Fähigkeit, sich vor Aufregung 'aufzublähen', schaffen diese erstaunlichen Kreaturen eine emotionale Bindung, die Ihren Tag erhellt.",
+    detailedDescription:
+      "Der Lila Kugelfisch ist nicht nur ein Haustier - er ist ein Begleiter, der Freude bringt, Stress reduziert und hilft, Einsamkeit zu bekämpfen. Mit ihren ausdrucksstarken Augen, verspielten Persönlichkeit und einzigartigen Fähigkeit, sich vor Aufregung 'aufzublähen', schaffen diese erstaunlichen Kreaturen eine emotionale Bindung, die Ihren Tag erhellt.",
     exploreSpecies: "Lernen Sie Ihren Kugelfisch kennen",
     watchCareGuide: "Pflegeanleitung",
     startYourAquarium: "Beginnen Sie Ihre Reise",
@@ -255,6 +261,8 @@ export const translations = {
     heroTitle: "Rencontrez votre nouveau meilleur ami",
     heroSubtitle: "Poisson-Globe Violet",
     heroDescription:
+      "Le Poisson-Globe Violet n'est pas seulement un animal de compagnie - c'est un compagnon qui apporte de la joie, réduit le stress et aide à combattre la solitude. Avec leurs yeux expressifs, leur personnalité joueuse et leur capacité unique à 'se gonfler' d'excitation, ces créatures extraordinaires créent un lien émotionnel qui illumine votre journée.",
+    detailedDescription:
       "Le Poisson-Globe Violet n'est pas seulement un animal de compagnie - c'est un compagnon qui apporte de la joie, réduit le stress et aide à combattre la solitude. Avec leurs yeux expressifs, leur personnalité joueuse et leur capacité unique à 'se gonfler' d'excitation, ces créatures extraordinaires créent un lien émotionnel qui illumine votre journée.",
     exploreSpecies: "Rencontrez votre poisson-globe",
     watchCareGuide: "Guide de soins",
